@@ -1,0 +1,76 @@
+---
+layout: complete
+---
+
+<div id="pano">
+
+  <span id="arrowLeft" class="arrow left show"></span>
+  <span id="arrowRight" class="arrow right show"></span>
+
+  <div id="ac" class="ac"></div>
+
+  <div id="panels">
+    <section class="panel" data-open="wall-drawing"><div><p>Wall Drawing</p></div></section>
+    <!-- <section class="panel" data-open="foreword"><div><p>Foreword</p><p class="by">Helen Marzolf</p></div></section> -->
+    <section class="panel" data-open="introduction"><div><p>Introduction</p><p class="by">Breanna Fabbro</p></div></section>
+    <section class="panel" data-open="cablecar"><div><p>Cable Car</p></div></section>
+    <section class="panel" data-open="drawing-the-path-less-traveled"><div><p>Drawing the Path</p><p>Less Traveled</p><p class="by">Tracy Valcourt</p></div></section>
+    <section class="panel" data-open="slugs"><div><p>Slugs</p></div></section>
+    <section class="panel" data-open="brain-of-the-brain"><div><p>The Brain of</p><p>the Brain</p><p class="by">Jennifer Cane</p></div></section>
+    <section class="panel" data-open="panoramas"><div><p>Panoramas</p></div></section>
+    <section class="panel" data-open="interview"><div><p>Interview</p><p class="by">Greta Hamilton</p></div></section>
+    <section class="panel" data-open="beach-walks"><div><p>Beach Walks</p></div></section>
+    <section class="panel" data-open="trail-journal"><div><p>Jim Holyoak’s</p><p>Trail Journal</p></div></section>
+    <section class="panel" data-open="totally-freaky"><div><p>Totally Freaky</p></div></section>
+    <section class="panel" data-open="gifs"><div><p>GIFs</p></div></section>
+    <section class="panel" data-open="artist-talk"><div><p>Artist Talk</p></div></section>
+    <section class="panel" data-open="artist-bios"><div><p>Artist Bios</p></div></section>
+    <section class="panel" data-open="bibliography"><div><p>Bibliography</p></div></section>
+    <section class="panel" data-open="acknowledgements"><div><p>Acknowledgements</p></div></section>
+    <section class="panel" data-open="credits"><div><p>Credits</p></div></section>
+    <section class="panel" data-open="trail-drawings"><div><p>Trail Drawings</p></div></section>
+  </div>
+
+  <input id="menuToggle" type="checkbox">
+  <div id="menuDrawer">
+    <div id="menuListWrap">
+      <ul>
+        <li class="title"><p><em>Forestrial Brain</em></p></li>
+        <li class="menuItem" data-select="wall-drawing"><p>Wall Drawing</p></li>
+        <!-- <li class="menuItem" data-select="foreword"><p>Foreword&nbsp;<span>by Helen Marzolf</span></p></li> -->
+        <li class="menuItem" data-select="introduction"><p>Introduction&nbsp;<span>by Breanna Fabbro</span></p></li>
+        <li class="menuItem" data-select="cablecar"><p>Cable Car</p></li>
+        <li class="menuItem" data-select="drawing-the-path-less-traveled"><p>Drawing the Path Less Traveled&nbsp;<span>by Tracy Valcourt</span></p></li>
+        <li class="menuItem" data-select="slugs">Slugs</li>
+        <li class="menuItem" data-select="brain-of-the-brain">The Brain of the Brain&nbsp;<span>by Jennifer Cane</span></li>
+        <li class="menuItem" data-select="panoramas">Panoramas</li>
+        <li class="menuItem" data-select="interview">Interview&nbsp;<span>by Greta Hamilton</span></li>
+        <li class="menuItem" data-select="beach-walks">Beach Walks</li>
+        <li class="menuItem" data-select="trail-journal">Jim Holyoak’s Trail Journal</li>
+        <li class="menuItem" data-select="totally-freaky">Totally Freaky</li>
+        <li class="menuItem" data-select="gifs">GIFs</li>
+        <li class="menuItem" data-select="artist-talk">Artist Talk</li>
+        <li class="menuItem" data-select="artist-bios">Artist Bios</li>
+        <li class="menuItem" data-select="bibliography">Bibliography</li>
+        <li class="menuItem" data-select="acknowledgements">Acknowledgements</li>
+        <li class="menuItem" data-select="credits">Credits</li>
+        <li class="menuItem" data-select="trail-drawings">Trail Drawings</li>
+      </ul>
+    </div>
+    <label for="menuToggle" class="menuToggle"></label>
+  </div>
+
+  {% image "openspace.png" id:"openspace" %}
+
+  {% image "forestrialpanoramic.jpg" id:"panorama" %}
+
+  <svg width="0" height="0" style="display:block;">
+    <clipPath id="clippathA" clipPathUnits="objectBoundingBox">
+      <polygon points=".76 .769 .748 .782 .74 .79 .723 .808 .715 .817 .707 .824 .693 .837 .683 .847 .671 .857 .657 .868 .646 .876 .634 .884 .624 .891 .616 .896 .592 .91 .573 .918 .552 .925 .53 .93 .516 .933 .505 .934 .491 .934 .47 .933 .45 .931 .432 .927 .411 .92 .398 .915 .392 .912 .377 .904 .366 .898 .359 .893 .342 .882 .333 .875 .321 .866 .308 .856 .295 .845 .279 .83 .257 .808 .248 .798 .243 .792 .235 .783 .23 .778 .225 .775 .22 .774 .217 .775 .216 .776 .211 .777 .201 .78 .2 .78 .199 .78 .181 .784 .177 .784 .173 .785 .165 .786 .155 .788 .143 .788 .135 .788 .128 .788 .111 .788 .1 .787 .088 .785 .076 .783 .072 .782 .066 .78 .052 .777 .046 .776 .043 .775 .037 .777 .036 .778 .034 .78 .033 .783 .032 .787 .032 .788 .032 .789 .03 .798 .029 .806 .027 .815 .024 .83 .021 .847 .018 .866 .016 .874 .012 .899 .01 .91 .007 .923 .005 .937 0 .936 0 .016 .006 .015 .007 .02 .008 .026 .009 .031 .011 .044 .012 .055 .013 .059 .013 .063 .013 .068 .015 .077 .015 .084 .016 .093 .018 .105 .019 .108 .019 .111 .019 .113 .02 .119 .022 .135 .022 .138 .024 .149 .026 .162 .026 .168 .028 .178 .029 .191 .029 .195 .03 .196 .03 .206 .031 .218 .032 .22 .033 .224 .034 .227 .034 .229 .039 .243 .039 .246 .04 .251 .04 .252 .042 .252 .045 .254 .048 .254 .054 .257 .056 .258 .057 .257 .063 .258 .066 .259 .073 .26 .08 .261 .089 .263 .094 .264 .098 .266 .107 .268 .109 .269 .125 .273 .135 .277 .137 .278 .139 .279 .148 .283 .157 .287 .16 .287 .161 .288 .165 .291 .184 .301 .186 .303 .187 .303 .197 .309 .203 .313 .204 .314 .204 .274 .205 .192 .205 .142 .208 .145 .215 .148 .218 .148 .226 .13 .232 .119 .236 .109 .243 .093 .254 .07 .259 .06 .264 .052 .273 .035 .282 .019 .289 .009 .292 .003 .293 0 .714 0 .726 .021 .728 .024 .729 .026 .735 .035 .743 .051 .75 .064 .762 .086 .768 .098 .784 .08 .798 .066 .817 .046 .828 .036 .84 .025 .85 .017 .869 .005 .876 0 1 0 1 .771 .99 .775 .986 .776 .979 .777 .975 .778 .967 .78 .954 .783 .937 .786 .928 .786 .927 .787 .911 .788 .901 .788 .893 .789 .882 .789 .872 .788 .862 .787 .848 .785 .826 .781 .817 .779 .803 .775 .799 .774 .798 .773 .798 .77 .799 .769 .799 .764 .798 .323 .767 .345 .768 .76 .76 .769"/>
+    </clipPath>
+    <clipPath id="clippathB" clipPathUnits="objectBoundingBox">
+      <polygon points=".76 .769 .748 .782 .74 .79 .723 .808 .715 .817 .707 .824 .693 .837 .683 .847 .671 .857 .657 .868 .646 .876 .634 .884 .624 .891 .616 .896 .592 .91 .573 .918 .552 .925 .53 .93 .516 .933 .505 .934 .491 .934 .47 .933 .45 .931 .432 .927 .411 .92 .398 .915 .392 .912 .377 .904 .366 .898 .359 .893 .342 .882 .333 .875 .321 .866 .308 .856 .295 .845 .279 .83 .257 .808 .248 .798 .243 .792 .235 .783 .23 .778 .225 .775 .22 .774 .217 .775 .216 .776 .211 .777 .201 .78 .2 .78 .199 .78 .181 .784 .177 .784 .173 .785 .165 .786 .155 .788 .143 .788 .135 .788 .128 .788 .111 .788 .1 .787 .088 .785 .076 .783 .072 .782 .066 .78 .052 .777 .046 .776 .043 .775 .037 .777 .036 .778 .034 .78 .033 .783 .032 .787 .032 .788 .032 .789 .03 .798 .029 .806 .027 .815 .024 .83 .021 .847 .018 .866 .016 .874 .012 .899 .01 .91 .007 .923 .005 .937 0 .936 0 .016 .006 .015 .007 .02 .008 .026 .009 .031 .011 .044 .012 .055 .013 .059 .013 .063 .013 .068 .015 .077 .015 .084 .016 .093 .018 .105 .019 .108 .019 .111 .019 .113 .02 .119 .022 .135 .022 .138 .024 .149 .026 .162 .026 .168 .028 .178 .029 .191 .029 .195 .03 .196 .03 .206 .031 .218 .032 .22 .033 .224 .034 .227 .034 .229 .039 .243 .039 .246 .04 .251 .04 .252 .042 .252 .045 .254 .048 .254 .054 .257 .056 .258 .057 .257 .063 .258 .066 .259 .073 .26 .08 .261 .089 .263 .094 .264 .098 .266 .107 .268 .109 .269 .125 .273 .135 .277 .137 .278 .139 .279 .148 .283 .157 .287 .16 .287 .161 .288 .165 .291 .184 .301 .186 .303 .187 .303 .197 .309 .203 .313 .204 .314 .204 .274 .205 .192 .205 .142 .208 .145 .215 .148 .218 .148 .226 .13 .232 .119 .236 .109 .243 .093 .254 .07 .259 .06 .264 .052 .273 .035 .282 .019 .289 .009 .292 .003 .293 0 .714 0 .726 .021 .728 .024 .729 .026 .735 .035 .743 .051 .75 .064 .762 .086 .768 .098 .784 .08 .798 .066 .817 .046 .828 .036 .84 .025 .85 .017 .869 .005 .876 0 1 0 1 .771 .99 .775 .986 .776 .979 .777 .975 .778 .967 .78 .954 .783 .937 .786 .928 .786 .927 .787 .911 .788 .901 .788 .893 .789 .882 .789 .872 .788 .862 .787 .848 .785 .826 .781 .817 .779 .803 .775 .799 .774 .798 .773 .797 .763 .773 .754 .768 .76 .76 .769"/>
+    </clipPath>
+  </svg>
+
+</div>

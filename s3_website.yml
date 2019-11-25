@@ -1,0 +1,28 @@
+s3_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
+s3_secret: <%= ENV['S3_SECRET_KEY'] %>
+s3_bucket: forestrialbrain
+
+index_document: index.html
+
+cache_control:
+  "*": public, max-age=<%= 60 * 60 * 12 %>
+  "sw.js": no-cache, no-store
+
+gzip: true
+
+s3_endpoint: ca-central-1
+
+s3_reduced_redundancy: true
+
+cloudfront_distribution_id: <%= ENV['CLOUDFRONT_DISTRIBUTION_ID'] %>
+
+cloudfront_distribution_config:
+  default_cache_behavior:
+    min_ttl: <%= 60 * 60 * 24 %>
+  # http_version: http2
+  # aliases:
+  #   quantity: 1
+  #   items:
+  #     CNAME: forestrialbrain.openspace.ca
+
+cloudfront_wildcard_invalidation: true

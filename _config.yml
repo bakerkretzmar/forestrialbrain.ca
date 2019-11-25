@@ -1,0 +1,43 @@
+title: "Forestrial Brain"
+description: "Online publication for the Forestrial Brain installation at Open Space gallery in Victoria, BC."
+url: "http://forestrialbrain.openspace.ca"
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: wrap
+      image: "/card.jpg"
+
+manifest:
+  name: Forestrial Brain
+  short_name: forestrialbrain
+  lang: en_CA
+  background_color: "#fefefe"
+  display: browser
+  description: "Online publication for the Forestrial Brain installation at Open Space gallery in Victoria, BC."
+
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-assets
+
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - s3_website.yml
+
+assets:
+  assets:
+    - "*"
+  autoprefixer:
+    browsers: ["last 3 versions","> 0.1%"]
+  features:
+    liquid: true
+  digest: false
+  prefix: "/"
+
+timezone: America/Toronto

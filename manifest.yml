@@ -1,0 +1,33 @@
+---
+permalink: manifest.json
+layout: null
+---
+
+{
+  "lang": "{{ site.manifest.lang }}",
+  "background_color": "{{ site.manifest.background_color }}",
+  "theme_color": "{{ site.manifest.background_color }}",
+  "name": "{{ site.manifest.name }}",
+  "short_name": "{{ site.manifest.short_name }}",
+  "display": "{{ site.manifest.display }}",
+  "orientation": "portrait",
+  "description": "{{ site.manifest.description }}",
+  "start_url": "/index.html?launcher=true",
+  "icons": [{
+    "src": "{% asset_path icon-128x128.png %}",
+    "type": "image/png",
+    "sizes": "128x128"
+  }, {
+    "src": "{% asset_path apple-touch-icon.png %}",
+    "type": "image/png",
+    "sizes": "152x152"
+  }, {
+    "src": "{% asset_path ms-touch-icon.png %}",
+    "type": "image/png",
+    "sizes": "144x144"
+  }, {
+    "src": "{% asset_path chrome-touch-icon.png %}",
+    "type": "image/png",
+    "sizes": "192x192"
+  }]
+}

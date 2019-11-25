@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{{ site.title }}</title>
+
+<meta name="description" content="{{ site.description }}" />
+
+<link rel="manifest" href="/manifest.json">
+<link rel="shortcut icon" type="image/png" href="{% asset_path icon-128x128.png %}">
+<link rel="apple-touch-icon" type="image/png" href="{% asset_path apple-touch-icon.png %}">
+
+<!-- Google+ -->
+<meta itemprop="name" content="{{ site.title }}">
+<meta itemprop="description" content="{{ site.description }}">
+<meta itemprop="image" content="{% asset_path card.jpg %}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="{% asset_path card.jpg %}">
+<meta name="twitter:site" content="@OpenSpaceVic">
+<meta name="twitter:title" content="{{ site.title }}">
+<meta name="twitter:description" content="{{ site.description }}">
+<meta name="twitter:creator" content="@OpenSpaceVic">
+<meta name="twitter:image:src" content="{% asset_path card.jpg %}">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="{{ site.title }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ site.url }}" />
+<meta property="og:image" content="{% asset_path card.jpg %}" />
+<meta property="og:description" content="{{ site.description }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="article:published_time" content="2018-02-01T10:00:00-08:00" />
+<meta property="fb:admins" content="140002379542611" />
