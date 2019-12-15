@@ -1,5 +1,7 @@
 # Forestrial Brain
 
+Original repo with huge, messy file history: [gitlab.com/bakerkretzmar/forestrial-brain](https://gitlab.com/bakerkretzmar/forestrial-brain)
+
 Online publication for the Forestrial Brain installation at Open Space gallery in Victoria, BC.
 
 #### Description
